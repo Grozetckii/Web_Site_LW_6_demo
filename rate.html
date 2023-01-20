@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Algorate</title>
+    <link rel="stylesheet" href="css/template.css">
+    <link rel="stylesheet" href="css/rate.css">
+  </head>
+  <body>
+    <div class="main-area">
+      <div class="block-header">
+        <div class="logo">
+          <p>Algorate</p>
+        </div>
+        <nav>
+          <div class="main-button"><a href="/">Главная</a></div>
+          <div class="rate-button"><a href="rate.html">Рейтинг</a></div>
+        </nav>
+      </div>
+      <div class="block-body">
+        <div class="content">
+          <details>
+            <summary>График</summary>
+            <form>
+              <table>
+                <tr>
+                  <th>Значения по оси OX</th>
+                  <th>Результат</th>
+                </tr>
+                <tr>
+                  <td>
+                    <input type="radio" name="x" value="0">Тип<br>
+                    <input type="radio" name="x" value="1">Эффективность<br>
+                  </td>
+                  <td>
+                    <input type="checkbox" name="y" value="0">Максимальная эффективность<br>
+                    <input type="checkbox" name="y" value="1">Минимальная эффективность<br>
+                    <input type="checkbox" name="y" value="3">Год<br>
+                  </td>
+                </tr>
+              </table>
+              <input type=button value="Построить график">
+            </form>
+          </details>
+          <details>
+            <summary>Фильтр</summary>
+            <form>
+              <p>
+                <label for="name">Название:</label>
+                <input type=text name="name">
+              </p>
+              <p>
+                <label for="type">Тип:</label>
+                <input type=text name="type">
+              </p>
+              <p>
+                <label for="effciency">Эффективность:</label>
+                <input type=text name="effciency">
+              </p>
+              <p>
+                <label for="year">Год:</label>
+                <input type=text name="year">
+              </p>
+              <input type=button value="Найти">
+            </form>
+          </details>
+          <details>
+            <summary>Сортировка</summary>
+            <form>
+              <p>
+                Первый уровень:
+                <select name="sortFirst">
+                  <option value="0">Нет</option>
+                  <option value="1">Название</option>
+                  <option value="2">Тип</option>
+                  <option value="3">Эффективность</option>
+                  <option value="4">Год разработки</option>
+                </select>
+                по убыванию? <input  type="checkbox"  name= "descFirst">
+              </p>
+              <p>
+                Второй уровень:
+                <select name="sortSecond">
+                  <option value="0">Нет</option>
+                  <option value="1">Название</option>
+                  <option value="2">Тип</option>
+                  <option value="3">Эффективность</option>
+                  <option value="4">Год разработки</option>
+                </select>
+                по убыванию? <input  type="checkbox"  name= "descSecond">
+              </p>
+              <p>
+                Третий уровень:
+                <select name="sortThird">
+                  <option value="0">Нет</option>
+                  <option value="1">Название</option>
+                  <option value="2">Тип</option>
+                  <option value="3">Эффективность</option>
+                  <option value="4">Год разработки</option>
+                </select>
+                по убыванию? <input  type="checkbox"  name= "descThird" >
+              </p>
+              <input type=button value="Сортировать">
+            </form>
+          </details>
+          <br><br>
+          <table border="1" cellspacing="0" cellpadding="5">
+            <tr>
+              <th>Название</th>
+              <th>Тип</th>
+              <th>Эффективность</th>
+              <th>Год разработки</th>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм поиска в ширину (BFS)</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм поиска в глубину (DFS)</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм сортировки слиянием</td>
+              <td>Сортировка</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм быстрой сортировки</td>
+              <td>Сортировка</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм Крускала</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм Флойда Уоршелла</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм Дейкстры</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм Беллмана Форда</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм Кадане</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм Ли</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм заливки</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм обнаружения цикла Флойда</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм поиска союза</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм топологической сортировки</td>
+              <td>Сортировка</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм КМП</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм сортировки вставками</td>
+              <td>Сортировка</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм сортировки выбором</td>
+              <td>Сортировка</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм сортировки подсчетом</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм сортировки кучей</td>
+              <td>Сортировка</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм топологической сортировки Кана</td>
+              <td>Сортировка</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм сжатия кода Хаффмана</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм быстрого выбора</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм голосования Бойера-Мура</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм Евклида</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+            <tr>
+              <td>Алгоритм бинарного поиска</td>
+              <td>Поиск</td>
+              <td>O(log N)</td>
+              <td>1971</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
